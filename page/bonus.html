@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav
+      class="flex flex-wrap items-center justify-center gap-5 w-full py-4 md:py-0 px-4 text-lg text-gray-700 bg-white"
+    >
+      <!--  Code goes here      -->
+      <div>
+        <a
+          class="md:p-4 py-2 block hover:text-purple-400 p-2"
+          href="/page/home.html"
+          >Surat untuk cintahhku</a
+        >
+      </div>
+      <div>
+        <a
+          class="md:p-4 py-2 block hover:text-purple-400 bg-purple-100 p-2 rounded-lg font-bold"
+          href="/page/bonus.html"
+          >Bonus hehehe</a
+        >
+      </div>
+
+      <div class="w-full md:flex items-center w-auto" id="menu">
+        <ul
+          class="text-base text-gray-700 pt-4 md:flex md:justify-between md:pt-0"
+        >
+          <li>
+            <a
+              class="md:p-4 py-2 block hover:text-purple-400 bg-purple-100 p-2 rounded-lg font-bold"
+              href="#"
+              >Surat untuk cintahhku</a
+            >
+          </li>
+          <li>
+            <a class="md:p-4 py-2 block hover:text-purple-400 p-2" href="#"
+              >Bonus hehehe</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="grid">
+      <button
+        class="bg-pink-200 text-pink-800 font-bold m-5 p-3 rounded-lg cursor-pointer"
+        id="letter-button"
+      >
+        Sudah siap buka bonusnyaaa??? Ehehehe
+      </button>
+      <div class="bg-gray-200 m-5 p-5 rounded-lg hidden" id="letter">
+        <p class="text-center mb-5">Caption: Bebeb tidur so nyenyakkkk sampe mangap</p>
+        <img src="/page/img2.jpg" />
+
+        <p class="text-center my-5">Caption: Bebbbb awass ada nyamuk yao masokkkk WKWKKWKW</p>
+        <img src="/page/img1.jpg" />
+      </div>
+    </div>
+    <script>
+      //       const button = document.querySelector("#menu-button"); // Hamburger Icon
+      //       const menu = document.querySelector("#menu"); // Menu
+      //
+      //       button.addEventListener("click", () => {
+      //         menu.classList.toggle("hidden");
+      //       });
+
+      const letterButton = document.querySelector("#letter-button");
+      const letter = document.querySelector("#letter");
+
+      letterButton.addEventListener("click", () => {
+        letter.classList.toggle("hidden");
+        letterButton.classList.add("hidden");
+        letter.classList.add("fade-in");
+      });
+    </script>
+  </body>
+</html>
